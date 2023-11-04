@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#a3cfb4">
+    <center>
+        <h1>PREDICTION:</h1>
+    
+        {% if data == 0 %}
+            <h1>Iris-setosa</h1>
+            <img src='static/satosa.png' width='400' height='400'>
+        {% elif data == 1 %}
+            <h1>Iris-versicolor</h1>
+            <img src='static/versicolor.png' width='400' height='400'>
+        {% elif data == 2 %}
+            <h1>Iris-virginica</h1>
+            <img src='static/virginia.jpg' width='400' height='400'>
+        {% else %}
+            <h1>Unknown Class</h1>
+        {% endif %}
+
+        <br><br>
+        <a href='/'>Go back to the home page</a>
+    </center>
+</body>
+</html>
